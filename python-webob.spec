@@ -1,6 +1,6 @@
 %define tarname	WebOb
 %define name	python-webob
-%define version 1.0.6
+%define version 1.1.1
 %define release %mkrel 1
 
 Summary:	WSGI request and response object for Python
