@@ -1,17 +1,13 @@
 %define tarname	WebOb
-%define name	python-webob
-%define version 1.1.1
-%define release %mkrel 1
 
 Summary:	WSGI request and response object for Python
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		python-webob
+Version:	1.1.1
+Release:	2
 Source0:	http://pypi.python.org/packages/source/W/%{tarname}/%{tarname}-%{version}.zip
 License:	MIT
 Group:		Development/Python
 Url:		http://pythonpaste.org/webob/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 Requires:	python-pkg-resources
 BuildRequires:	python-setuptools
@@ -28,14 +24,21 @@ environment.
 %setup -q -n %{tarname}-%{version}
 
 %install
-%__rm -rf %{buildroot}
 find . -type f -exec chmod 644 {} \;
 find . -type d -exec chmod 755 {} \;
 PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record=FILE_LIST
-
-%clean
-%__rm -rf %{buildroot}
+sed -i 's/.*egg-info$//' FILE_LIST
 
 %files -f FILE_LIST
-%defattr(-,root,root)
+
+
+
+%changelog
+* Thu Nov 03 2011 Lev Givon <lev@mandriva.org> 1.1.1-1mdv2012.0
++ Revision: 716247
+- Update to 1.1.1.
+
+* Thu Mar 31 2011 Lev Givon <lev@mandriva.org> 1.0.6-1
++ Revision: 649443
+- import python-webob
 
