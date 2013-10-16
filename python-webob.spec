@@ -2,9 +2,9 @@
 
 Summary:	WSGI request and response object for Python
 Name:		python-webob
-Version:	1.1.1
-Release:	2
-Source0:	http://pypi.python.org/packages/source/W/%{tarname}/%{tarname}-%{version}.zip
+Version:	1.2.3
+Release:	1
+Source0:	http://pypi.python.org/packages/source/W/WebOb/WebOb-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
 Url:		http://pythonpaste.org/webob/
@@ -41,4 +41,5 @@ sed -i 's/.*egg-info$//' FILE_LIST
 * Thu Mar 31 2011 Lev Givon <lev@mandriva.org> 1.0.6-1
 + Revision: 649443
 - import python-webob
+
 
