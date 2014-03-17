@@ -2,7 +2,7 @@
 
 Summary:	WSGI request and response object for Python
 Name:		python-webob
-Version:	1.2.3
+Version:	1.3.1
 Release:	1
 Source0:	http://pypi.python.org/packages/source/W/WebOb/WebOb-%{version}.tar.gz
 License:	MIT
@@ -41,5 +41,6 @@ sed -i 's/.*egg-info$//' FILE_LIST
 * Thu Mar 31 2011 Lev Givon <lev@mandriva.org> 1.0.6-1
 + Revision: 649443
 - import python-webob
+
 
 

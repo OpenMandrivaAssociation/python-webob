@@ -1,4 +1,5 @@
 removed_sources:
   WebOb-1.1.1.zip: 00ba643ebc0f66a20b22b6d9fb873852b6e155aa
-sources:
   WebOb-1.2.3.tar.gz: 1c85d450dbad7fa0edc89539f456a1e6445d96c5
+sources:
+  WebOb-1.3.1.tar.gz: 1e56bece2d71c8482060d07a4d58563df993eb7b
