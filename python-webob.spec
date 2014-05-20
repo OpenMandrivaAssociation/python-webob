@@ -1,8 +1,9 @@
 %define tarname	WebOb
 
 Summary:	WSGI request and response object for Python
+
 Name:		python-webob
-Version:	1.3.1
+Version:	1.4
 Release:	1
 Source0:	http://pypi.python.org/packages/source/W/WebOb/WebOb-%{version}.tar.gz
 License:	MIT
@@ -31,16 +32,6 @@ sed -i 's/.*egg-info$//' FILE_LIST
 
 %files -f FILE_LIST
 
-
-
-%changelog
-* Thu Nov 03 2011 Lev Givon <lev@mandriva.org> 1.1.1-1mdv2012.0
-+ Revision: 716247
-- Update to 1.1.1.
-
-* Thu Mar 31 2011 Lev Givon <lev@mandriva.org> 1.0.6-1
-+ Revision: 649443
-- import python-webob
 
 
 
