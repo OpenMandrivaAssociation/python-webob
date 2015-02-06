@@ -4,7 +4,7 @@ Summary:	WSGI request and response object for Python
 
 Name:		python-webob
 Version:	1.4
-Release:	1
+Release:	2
 Source0:	http://pypi.python.org/packages/source/W/WebOb/WebOb-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
