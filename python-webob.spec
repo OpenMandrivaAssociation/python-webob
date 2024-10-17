@@ -8,7 +8,7 @@ Release:	2
 Source0:	http://pypi.python.org/packages/source/W/WebOb/WebOb-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
-Url:		http://pythonpaste.org/webob/
+Url:		https://pythonpaste.org/webob/
 BuildArch:	noarch
 Requires:	python-pkg-resources
 BuildRequires:	python-setuptools
